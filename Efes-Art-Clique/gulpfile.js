@@ -1,15 +1,3 @@
-# Download and install fnm:
-winget install Schniz.fnm
-
-# Download and install Node.js:
-fnm install 22
-
-# Verify the Node.js version:
-node -v # Should print "v22.14.0".
-
-# Verify npm version:
-npm -v # Should print "10.9.2".
-
 
 // Get the container element
 var btnContainer = document.getElementById("myDIV");
@@ -45,3 +33,7 @@ exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
 exports.build = series(scssTask, jsTask);
+
+"scripts" : {
+      "gulp" : "gulp"
+}
